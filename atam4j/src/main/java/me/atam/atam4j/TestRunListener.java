@@ -85,7 +85,7 @@ public class TestRunListener extends RunListener {
                 category = monitorCategory.name();
             }
         } catch (ClassNotFoundException | NoSuchMethodException e) {
-            LOGGER.warn("Test class or method not found", e);
+            LOGGER.warn("Test class or method not found cause={}", e.getMessage());
         }
 
         return category;
